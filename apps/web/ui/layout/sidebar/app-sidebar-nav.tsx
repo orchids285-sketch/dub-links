@@ -343,16 +343,7 @@ const NAV_AREAS: SidebarNavAreas<SidebarNavData> = {
             icon: LinesY,
             href: `/${slug}/links/analytics${pathname === `/${slug}/links/analytics` ? "" : queryString}`,
           },
-          {
-            name: "Events",
-            icon: CursorRays,
-            href: `/${slug}/links/events${pathname === `/${slug}/links/events` ? "" : queryString}`,
-          },
-          {
-            name: "Customers",
-            icon: User,
-            href: `/${slug}/links/customers`,
-          },
+          // links-only self-host: Events + Customers are conversion-attribution, hidden.
         ],
       },
       {
@@ -617,21 +608,13 @@ export function AppSidebarNav({
         unreadMessagesCount,
         pendingFraudEventsCount,
         pendingLeadsCount,
-        showConversionGuides:
-          canTrackConversions && pathname.startsWith(`/${slug}/links`),
+        showConversionGuides: false, // links-only self-host: no conversion-tracking setup
         partnerNetworkEnabled:
           program && program.partnerNetworkEnabledAt !== null,
         hasProgramAccess,
       }}
       toolContent={toolContent}
-      newsContent={
-        plan &&
-        (plan === "free" || isWorkspaceBillingTrialActive(trialEndsAt) ? (
-          <SidebarUsage />
-        ) : (
-          newsContent
-        ))
-      }
+      newsContent={null /* links-only self-host: hide Dub usage/news/upgrade banner */}
       switcher={<WorkspaceDropdown />}
     />
   );

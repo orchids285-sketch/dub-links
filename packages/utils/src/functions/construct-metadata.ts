@@ -44,7 +44,7 @@ export function constructMetadata({
   return {
     title:
       fullTitle ||
-      (title ? `${title} | Dub` : "Dub - The Modern Link Attribution Platform"),
+      (title ? `${title} | Links` : "Links"),
     description,
     openGraph: {
       title,
