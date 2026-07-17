@@ -121,17 +121,8 @@ export function SidebarNav<T extends Record<any, any>>({
         <nav className="grid size-full grid-cols-[var(--sidebar-groups-width)_1fr]">
           <div className="flex flex-col items-center justify-between">
             <div className="flex flex-col items-center p-2">
-              <div className="pb-1 pt-2">
-                <Link
-                  href="/"
-                  className="block overflow-visible rounded-lg px-1 py-4 outline-none transition-opacity focus-visible:ring-2 focus-visible:ring-black/50"
-                >
-                  {/* FoundReach branding instead of the Dub logo */}
-                  <span className="block px-1 text-base font-semibold tracking-tight text-neutral-900 dark:text-white">
-                    FoundReach
-                  </span>
-                </Link>
-              </div>
+              {/* removed the cramped wordmark from the narrow rail; the brand now
+                  lives in the workspace switcher (workspace name = FoundReach) */}
               {(!currentArea ||
                 !areas[currentArea](data).hideSwitcherIcons) && (
                 <div className="flex flex-col gap-3">
