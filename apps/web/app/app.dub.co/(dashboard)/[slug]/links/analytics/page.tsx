@@ -1,17 +1,28 @@
-import Analytics from "@/ui/analytics";
-import LayoutLoader from "@/ui/layout/layout-loader";
 import { PageContent } from "@/ui/layout/page-content";
-import { Suspense } from "react";
-import AnalyticsClient from "./client";
 
+// Analytics is powered by the self-hosted traffic-source tool (Dub's own analytics
+// need Tinybird, which isn't self-hostable). Embedded here so it lives inside Dub's
+// shell — same Dub interface, working analytics underneath.
 export default function WorkspaceAnalytics() {
+  const base = process.env.NEXT_PUBLIC_TRAFFIC_SOURCE_URL || "";
+  const siteId = process.env.NEXT_PUBLIC_TRAFFIC_SOURCE_SITE_ID || "1";
+  const src = base ? `${base}/analytics/${siteId}` : "";
+
   return (
-    <Suspense fallback={<LayoutLoader />}>
-      <PageContent title="Analytics">
-        <AnalyticsClient>
-          <Analytics />
-        </AnalyticsClient>
-      </PageContent>
-    </Suspense>
+    <PageContent title="Analytics">
+      <div className="h-[calc(100vh-6.5rem)] w-full overflow-hidden rounded-t-2xl bg-white">
+        {src ? (
+          <iframe
+            src={src}
+            className="h-full w-full border-0"
+            title="Analytics"
+          />
+        ) : (
+          <div className="flex h-full items-center justify-center text-sm text-neutral-500">
+            Analytics service not configured.
+          </div>
+        )}
+      </div>
+    </PageContent>
   );
 }

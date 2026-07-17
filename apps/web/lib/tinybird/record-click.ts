@@ -125,6 +125,32 @@ export async function recordClick({
 
   const referer = referrer || req.headers.get("referer");
 
+  // Feed the click into the self-hosted traffic-source analytics (replaces the
+  // non-deployable Tinybird analytics). Fire-and-forget; never blocks the redirect.
+  if (process.env.TRAFFIC_SOURCE_URL) {
+    try {
+      fetch(`${process.env.TRAFFIC_SOURCE_URL}/api/collect`, {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+          "user-agent": ua.ua || "",
+        },
+        body: JSON.stringify({
+          site_id: Number(process.env.TRAFFIC_SOURCE_SITE_ID || 1),
+          visitor_id: identityHash,
+          session_id: `${identityHash}-${new Date().toISOString().slice(0, 13)}`,
+          type: "pageview",
+          pathname: `/${key}`,
+          url: `https://${domain}/${key}`,
+          hostname: domain,
+          referrer: referer || "",
+        }),
+      })
+        .then((r) => r.body?.cancel?.())
+        .catch(() => {});
+    } catch {}
+  }
+
   const clickData = {
     timestamp: timestamp || new Date(Date.now()).toISOString(),
     identity_hash: identityHash,

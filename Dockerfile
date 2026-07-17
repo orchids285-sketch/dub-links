@@ -28,6 +28,8 @@ ENV NODE_OPTIONS=--max-old-space-size=8192
 #     Real values come from Railway service vars at RUNTIME (they override these).
 ARG NEXT_PUBLIC_APP_DOMAIN
 ARG NEXT_PUBLIC_SHORT_DOMAIN
+ARG NEXT_PUBLIC_TRAFFIC_SOURCE_URL
+ARG NEXT_PUBLIC_TRAFFIC_SOURCE_SITE_ID
 # Some pages run DB queries during "collect page data" (SSG). Point the build at a
 # PUBLIC-reachable DB (the MySQL TCP proxy) via a Railway build var so those queries
 # return real (empty) data. Not hardcoded — the value lives in Railway, not the repo.
@@ -35,6 +37,8 @@ ARG DATABASE_URL_BUILD
 ENV DATABASE_URL=$DATABASE_URL_BUILD \
     NEXT_PUBLIC_APP_DOMAIN=$NEXT_PUBLIC_APP_DOMAIN \
     NEXT_PUBLIC_SHORT_DOMAIN=$NEXT_PUBLIC_SHORT_DOMAIN \
+    NEXT_PUBLIC_TRAFFIC_SOURCE_URL=$NEXT_PUBLIC_TRAFFIC_SOURCE_URL \
+    NEXT_PUBLIC_TRAFFIC_SOURCE_SITE_ID=$NEXT_PUBLIC_TRAFFIC_SOURCE_SITE_ID \
     STRIPE_SECRET_KEY=sk_test_dummy \
     STRIPE_APP_SECRET_KEY=sk_test_dummy \
     UPSTASH_REDIS_REST_URL=http://localhost \
