@@ -52,7 +52,7 @@ importers:
         version: 0.1.5(@axiomhq/js@1.3.1)
       '@axiomhq/nextjs':
         specifier: ^0.1.6
-        version: 0.1.6(@axiomhq/logging@0.1.5(@axiomhq/js@1.3.1))(next@15.5.8(@opentelemetry/api@1.9.0)(@playwright/test@1.58.2)(react-dom@19.1.3(react@19.1.3))(react@19.1.3))
+        version: 0.1.6(@axiomhq/logging@0.1.5(@axiomhq/js@1.3.1))(next@15.5.9(@opentelemetry/api@1.9.0)(@playwright/test@1.58.2)(react-dom@19.1.3(react@19.1.3))(react@19.1.3))
       '@better-fetch/fetch':
         specifier: ^1.1.21
         version: 1.1.21
@@ -91,7 +91,7 @@ importers:
         version: 1.29.1
       '@next-auth/prisma-adapter':
         specifier: ^1.0.7
-        version: 1.0.7(@prisma/client@6.19.1(prisma@6.19.1(typescript@5.4.4))(typescript@5.4.4))(next-auth@4.24.11(next@15.5.8(@opentelemetry/api@1.9.0)(@playwright/test@1.58.2)(react-dom@19.1.3(react@19.1.3))(react@19.1.3))(nodemailer@6.9.3)(react-dom@19.1.3(react@19.1.3))(react@19.1.3))
+        version: 1.0.7(@prisma/client@6.19.1(prisma@6.19.1(typescript@5.4.4))(typescript@5.4.4))(next-auth@4.24.11(next@15.5.9(@opentelemetry/api@1.9.0)(@playwright/test@1.58.2)(react-dom@19.1.3(react@19.1.3))(react@19.1.3))(nodemailer@6.9.3)(react-dom@19.1.3(react@19.1.3))(react@19.1.3))
       '@number-flow/react':
         specifier: ^0.4.1
         version: 0.4.1(react-dom@19.1.3(react@19.1.3))(react@19.1.3)
@@ -250,7 +250,7 @@ importers:
         version: 6.6.2
       geist:
         specifier: ^1.3.1
-        version: 1.3.1(next@15.5.8(@opentelemetry/api@1.9.0)(@playwright/test@1.58.2)(react-dom@19.1.3(react@19.1.3))(react@19.1.3))
+        version: 1.3.1(next@15.5.9(@opentelemetry/api@1.9.0)(@playwright/test@1.58.2)(react-dom@19.1.3(react@19.1.3))(react@19.1.3))
       he:
         specifier: ^1.2.0
         version: 1.2.0
@@ -300,17 +300,17 @@ importers:
         specifier: ^5.0.1
         version: 5.0.1
       next:
-        specifier: 15.5.8
-        version: 15.5.8(@opentelemetry/api@1.9.0)(@playwright/test@1.58.2)(react-dom@19.1.3(react@19.1.3))(react@19.1.3)
+        specifier: 15.5.9
+        version: 15.5.9(@opentelemetry/api@1.9.0)(@playwright/test@1.58.2)(react-dom@19.1.3(react@19.1.3))(react@19.1.3)
       next-auth:
         specifier: 4.24.11
-        version: 4.24.11(next@15.5.8(@opentelemetry/api@1.9.0)(@playwright/test@1.58.2)(react-dom@19.1.3(react@19.1.3))(react@19.1.3))(nodemailer@6.9.3)(react-dom@19.1.3(react@19.1.3))(react@19.1.3)
+        version: 4.24.11(next@15.5.9(@opentelemetry/api@1.9.0)(@playwright/test@1.58.2)(react-dom@19.1.3(react@19.1.3))(react@19.1.3))(nodemailer@6.9.3)(react-dom@19.1.3(react@19.1.3))(react@19.1.3)
       next-plausible:
         specifier: ^4.0.0
-        version: 4.0.0(next@15.5.8(@opentelemetry/api@1.9.0)(@playwright/test@1.58.2)(react-dom@19.1.3(react@19.1.3))(react@19.1.3))(react-dom@19.1.3(react@19.1.3))(react@19.1.3)
+        version: 4.0.0(next@15.5.9(@opentelemetry/api@1.9.0)(@playwright/test@1.58.2)(react-dom@19.1.3(react@19.1.3))(react@19.1.3))(react-dom@19.1.3(react@19.1.3))(react@19.1.3)
       next-safe-action:
         specifier: ^8.0.11
-        version: 8.0.11(next@15.5.8(@opentelemetry/api@1.9.0)(@playwright/test@1.58.2)(react-dom@19.1.3(react@19.1.3))(react@19.1.3))(react-dom@19.1.3(react@19.1.3))(react@19.1.3)
+        version: 8.0.11(next@15.5.9(@opentelemetry/api@1.9.0)(@playwright/test@1.58.2)(react-dom@19.1.3(react@19.1.3))(react@19.1.3))(react-dom@19.1.3(react@19.1.3))(react@19.1.3)
       node-html-parser:
         specifier: ^6.1.4
         version: 6.1.4
@@ -929,8 +929,8 @@ importers:
         specifier: ^10.4.16
         version: 10.4.16(postcss@8.4.31)
       next:
-        specifier: 15.5.8
-        version: 15.5.8(@opentelemetry/api@1.9.0)(@playwright/test@1.58.2)(react-dom@19.1.3(react@19.1.3))(react@19.1.3)
+        specifier: 15.5.9
+        version: 15.5.9(@opentelemetry/api@1.9.0)(@playwright/test@1.58.2)(react-dom@19.1.3(react@19.1.3))(react@19.1.3)
       postcss:
         specifier: ^8.4.31
         version: 8.4.31
@@ -993,8 +993,8 @@ importers:
         specifier: ^19.1.15
         version: 19.1.15
       next:
-        specifier: 15.5.8
-        version: 15.5.8(@opentelemetry/api@1.9.0)(@playwright/test@1.58.2)(react-dom@19.1.3(react@19.1.3))(react@19.1.3)
+        specifier: 15.5.9
+        version: 15.5.9(@opentelemetry/api@1.9.0)(@playwright/test@1.58.2)(react-dom@19.1.3(react@19.1.3))(react@19.1.3)
       react:
         specifier: ^19.1.3
         version: 19.1.3
@@ -3119,8 +3119,8 @@ packages:
       '@prisma/client': '>=2.26.0 || >=3'
       next-auth: ^4
 
-  '@next/env@15.5.8':
-    resolution: {integrity: sha512-ejZHa3ogTxcy851dFoNtfB5B2h7AbSAtHbR5CymUlnz4yW1QjHNufVpvTu8PTnWBKFKjrd4k6Gbi2SsCiJKvxw==}
+  '@next/env@15.5.9':
+    resolution: {integrity: sha512-4GlTZ+EJM7WaW2HEZcyU317tIQDjkQIyENDLxYJfSWlfqguN+dHkZgyQTV/7ykvobU7yEH5gKvreNrH4B6QgIg==}
 
   '@next/env@16.1.6':
     resolution: {integrity: sha512-N1ySLuZjnAtN3kFnwhAwPvZah8RJxKasD7x1f8shFqhncnWZn4JMfg37diLNuoHsLAlrDfM3g4mawVdtAG8XLQ==}
@@ -4289,99 +4289,116 @@ packages:
   '@react-email/body@0.2.1':
     resolution: {integrity: sha512-ljDiQiJDu/Fq//vSIIP0z5Nuvt4+DX1RqGasstChDGJB/14ogd4VdNS9aacoede/ZjGy3o3Qb+cxyS+XgM6SwQ==}
     engines: {node: '>=20.0.0'}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     peerDependencies:
       react: ^18.0 || ^19.0 || ^19.0.0-rc
 
   '@react-email/button@0.2.1':
     resolution: {integrity: sha512-qXyj7RZLE7POy9BMKSoqQ00tOXThjOZSUnI2Yu9i29IHngPlmrNayIWBoVKtElES7OWwypUcpiajwi1mUWx6/A==}
     engines: {node: '>=20.0.0'}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     peerDependencies:
       react: ^18.0 || ^19.0 || ^19.0.0-rc
 
   '@react-email/code-block@0.2.1':
     resolution: {integrity: sha512-M3B7JpVH4ytgn83/ujRR1k1DQHvTeABiDM61OvAbjLRPhC/5KLHU5KkzIbbuGIrjWwxAbL1kSQzU8MhLEtSxyw==}
     engines: {node: '>=20.0.0'}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     peerDependencies:
       react: ^18.0 || ^19.0 || ^19.0.0-rc
 
   '@react-email/code-inline@0.0.6':
     resolution: {integrity: sha512-jfhebvv3dVsp3OdPgKXnk8+e2pBiDVZejDOBFzBa/IblrAJ9cQDkN6rBD5IyEg8hTOxwbw3iaI/yZFmDmIguIA==}
     engines: {node: '>=20.0.0'}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     peerDependencies:
       react: ^18.0 || ^19.0 || ^19.0.0-rc
 
   '@react-email/column@0.0.14':
     resolution: {integrity: sha512-f+W+Bk2AjNO77zynE33rHuQhyqVICx4RYtGX9NKsGUg0wWjdGP0qAuIkhx9Rnmk4/hFMo1fUrtYNqca9fwJdHg==}
     engines: {node: '>=20.0.0'}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     peerDependencies:
       react: ^18.0 || ^19.0 || ^19.0.0-rc
 
   '@react-email/components@1.0.8':
     resolution: {integrity: sha512-zY81ED6o5MWMzBkr9uZFuT24lWarT+xIbOZxI6C9dsFmCWBczM8IE1BgOI8rhpUK4JcYVDy1uKxYAFqsx2Bc4w==}
     engines: {node: '>=20.0.0'}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     peerDependencies:
       react: ^18.0 || ^19.0 || ^19.0.0-rc
 
   '@react-email/container@0.0.16':
     resolution: {integrity: sha512-QWBB56RkkU0AJ9h+qy33gfT5iuZknPC7Un/IjZv9B0QmMIK+WWacc0cH6y2SV5Cv/b99hU94fjEMOOO4enpkbQ==}
     engines: {node: '>=20.0.0'}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     peerDependencies:
       react: ^18.0 || ^19.0 || ^19.0.0-rc
 
   '@react-email/font@0.0.10':
     resolution: {integrity: sha512-0urVSgCmQIfx5r7Xc586miBnQUVnGp3OTYUm8m5pwtQRdTRO5XrTtEfNJ3JhYhSOruV0nD8fd+dXtKXobum6tA==}
     engines: {node: '>=20.0.0'}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     peerDependencies:
       react: ^18.0 || ^19.0 || ^19.0.0-rc
 
   '@react-email/head@0.0.13':
     resolution: {integrity: sha512-AJg6le/08Gz4tm+6MtKXqtNNyKHzmooOCdmtqmWxD7FxoAdU1eVcizhtQ0gcnVaY6ethEyE/hnEzQxt1zu5Kog==}
     engines: {node: '>=20.0.0'}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     peerDependencies:
       react: ^18.0 || ^19.0 || ^19.0.0-rc
 
   '@react-email/heading@0.0.16':
     resolution: {integrity: sha512-jmsKnQm1ykpBzw4hCYHwBkt5pW2jScXffPeEH5ZRF5tZeF5b1pvlFTO9han7C0pCkZYo1kEvWiRtx69yfCIwuw==}
     engines: {node: '>=20.0.0'}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     peerDependencies:
       react: ^18.0 || ^19.0 || ^19.0.0-rc
 
   '@react-email/hr@0.0.12':
     resolution: {integrity: sha512-TwmOmBDibavUQpXBxpmZYi2Iks/yeZOzFYh+di9EltMSnEabH8dMZXrl+pxNXzCgZ2XE8HY7VmUL65Lenfu5PA==}
     engines: {node: '>=20.0.0'}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     peerDependencies:
       react: ^18.0 || ^19.0 || ^19.0.0-rc
 
   '@react-email/html@0.0.12':
     resolution: {integrity: sha512-KTShZesan+UsreU7PDUV90afrZwU5TLwYlALuCSU0OT+/U8lULNNbAUekg+tGwCnOfIKYtpDPKkAMRdYlqUznw==}
     engines: {node: '>=20.0.0'}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     peerDependencies:
       react: ^18.0 || ^19.0 || ^19.0.0-rc
 
   '@react-email/img@0.0.12':
     resolution: {integrity: sha512-sRCpEARNVTf3FQhZOC+JTvu5r6ubiYWkT0ucYXg8ctkyi4G8QG+jgYPiNUqVeTLA2STOfmPM/nrk1nb84y6CPQ==}
     engines: {node: '>=20.0.0'}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     peerDependencies:
       react: ^18.0 || ^19.0 || ^19.0.0-rc
 
   '@react-email/link@0.0.13':
     resolution: {integrity: sha512-lkWc/NjOcefRZMkQoSDDbuKBEBDES9aXnFEOuPH845wD3TxPwh+QTf0fStuzjoRLUZWpHnio4z7qGGRYusn/sw==}
     engines: {node: '>=20.0.0'}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     peerDependencies:
       react: ^18.0 || ^19.0 || ^19.0.0-rc
 
   '@react-email/markdown@0.0.18':
     resolution: {integrity: sha512-gSuYK5fsMbGk87jDebqQ6fa2fKcWlkf2Dkva8kMONqLgGCq8/0d+ZQYMEJsdidIeBo3kmsnHZPrwdFB4HgjUXg==}
     engines: {node: '>=20.0.0'}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     peerDependencies:
       react: ^18.0 || ^19.0 || ^19.0.0-rc
 
   '@react-email/preview-server@5.2.8':
     resolution: {integrity: sha512-drQ0C7vi7P0uE7Ox1Cyiujsx0oqp2RbIscOdSBR5qvzw3EKjlGbW2pWjQ000cjxTq3Si7lqlRKhOIF8MzOnqHw==}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
 
   '@react-email/preview@0.0.14':
     resolution: {integrity: sha512-aYK8q0IPkBXyMsbpMXgxazwHxYJxTrXrV95GFuu2HbEiIToMwSyUgb8HDFYwPqqfV03/jbwqlsXmFxsOd+VNaw==}
     engines: {node: '>=20.0.0'}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     peerDependencies:
       react: ^18.0 || ^19.0 || ^19.0.0-rc
 
@@ -4395,18 +4412,21 @@ packages:
   '@react-email/row@0.0.13':
     resolution: {integrity: sha512-bYnOac40vIKCId7IkwuLAAsa3fKfSfqCvv6epJKmPE0JBuu5qI4FHFCl9o9dVpIIS08s/ub+Y/txoMt0dYziGw==}
     engines: {node: '>=20.0.0'}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     peerDependencies:
       react: ^18.0 || ^19.0 || ^19.0.0-rc
 
   '@react-email/section@0.0.17':
     resolution: {integrity: sha512-qNl65ye3W0Rd5udhdORzTV9ezjb+GFqQQSae03NDzXtmJq6sqVXNWNiVolAjvJNypim+zGXmv6J9TcV5aNtE/w==}
     engines: {node: '>=20.0.0'}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     peerDependencies:
       react: ^18.0 || ^19.0 || ^19.0.0-rc
 
   '@react-email/tailwind@2.0.5':
     resolution: {integrity: sha512-7Ey+kiWliJdxPMCLYsdDts8ffp4idlP//w4Ui3q/A5kokVaLSNKG8DOg/8qAuzWmRiGwNQVOKBk7PXNlK5W+sg==}
     engines: {node: '>=20.0.0'}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     peerDependencies:
       '@react-email/body': 0.2.1
       '@react-email/button': 0.2.1
@@ -4445,6 +4465,7 @@ packages:
   '@react-email/text@0.1.6':
     resolution: {integrity: sha512-TYqkioRS45wTR5il3dYk/SbUjjEdhSwh9BtRNB99qNH1pXAwA45H7rAuxehiu8iJQJH0IyIr+6n62gBz9ezmsw==}
     engines: {node: '>=20.0.0'}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     peerDependencies:
       react: ^18.0 || ^19.0 || ^19.0.0-rc
 
@@ -5400,6 +5421,7 @@ packages:
 
   '@team-plain/typescript-sdk@5.9.0':
     resolution: {integrity: sha512-AHSXyt1kDt74m9YKZBCRCd6cQjB8QjUNr9cehtR2QHzZ/8yXJPzawPJDqOQ3ms5KvwuYrBx2qT3e6C/zrQ5UtA==}
+    deprecated: This package is now deprecated. Please use @team-plain/graphql, @team-plain/webhooks and @team-plain/ui-components (https://github.com/team-plain/sdk)
 
   '@tediousjs/connection-string@0.5.0':
     resolution: {integrity: sha512-7qSgZbincDDDFyRweCIEvZULFAw5iz/DeunhvuxpL31nfntX3P4Yd4HkHBRg9H8CdqY1e5WFN1PZIz/REL9MVQ==}
@@ -9575,6 +9597,7 @@ packages:
   json-2-csv@5.5.0:
     resolution: {integrity: sha512-1Y4upYpzhoweEMkFDogMU8fKLCs+ciNKviTotrrMZ8duqlycERcB38GYXpu4xcwm6YBn86cTXd7za2yUl0GAkg==}
     engines: {node: '>= 16'}
+    deprecated: A security vulnerability has been reported with the preventCsvInjection option which has been fixed in version 5.5.11. Please upgrade as soon as possible.
 
   json-bigint@1.0.0:
     resolution: {integrity: sha512-SiPv/8VpZuWbvLSMtTDU8hEfrZWg/mH/nV/b4o0CYbSxu1UIQPLdwKOCIyLQX+VIPO5vrLX3i8qtqFyhdPSUSQ==}
@@ -10367,10 +10390,9 @@ packages:
       react: '>= 18.2.0'
       react-dom: '>= 18.2.0'
 
-  next@15.5.8:
-    resolution: {integrity: sha512-Tma2R50eiM7Fx6fbDeHiThq7sPgl06mBr76j6Ga0lMFGrmaLitFsy31kykgb8Z++DR2uIEKi2RZ0iyjIwFd15Q==}
+  next@15.5.9:
+    resolution: {integrity: sha512-agNLK89seZEtC5zUHwtut0+tNrc0Xw4FT/Dg+B/VLEo9pAcS9rtTKpek3V6kVcVwsB2YlqMaHdfZL4eLEVYuCg==}
     engines: {node: ^18.18.0 || ^19.8.0 || >= 20.0.0}
-    deprecated: This version has a security vulnerability. Please upgrade to a patched version. See https://nextjs.org/blog/security-update-2025-12-11 for more details.
     hasBin: true
     peerDependencies:
       '@opentelemetry/api': ^1.1.0
@@ -11004,6 +11026,7 @@ packages:
   prebuild-install@7.1.3:
     resolution: {integrity: sha512-8Mf2cbV7x1cXPUILADGI3wuhfqWvtiLA1iclTDbFRZkgRQS0NqsPZphna9V+HyTEadheuPmjaJMsbzKQFOzLug==}
     engines: {node: '>=10'}
+    deprecated: No longer maintained. Please contact the author of the relevant native addon; alternatives are available.
     hasBin: true
 
   prelude-ls@1.2.1:
@@ -13065,6 +13088,7 @@ packages:
 
   uuid@10.0.0:
     resolution: {integrity: sha512-8XkAphELsDnEGrDxUOHB3RGvXz6TeuYSGEZBOjtTtPm2lwhGBjLgOzLHB63IUWfBpNucQjND6d3AOudO+H3RWQ==}
+    deprecated: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
     hasBin: true
 
   uuid@11.0.3:
@@ -13077,15 +13101,17 @@ packages:
 
   uuid@3.4.0:
     resolution: {integrity: sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==}
-    deprecated: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+    deprecated: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
     hasBin: true
 
   uuid@8.3.2:
     resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
+    deprecated: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
     hasBin: true
 
   uuid@9.0.1:
     resolution: {integrity: sha512-b+1eJOlsR9K8HJpow9Ok3fiWOWSIcIzXodvv0rQjVoOVNpWMpxf1wZNpt4y9h10odCNrqnYp1OBzRktckBe3sA==}
+    deprecated: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
     hasBin: true
 
   v8-compile-cache-lib@3.0.1:
@@ -14176,10 +14202,10 @@ snapshots:
     optionalDependencies:
       '@axiomhq/js': 1.3.1
 
-  '@axiomhq/nextjs@0.1.6(@axiomhq/logging@0.1.5(@axiomhq/js@1.3.1))(next@15.5.8(@opentelemetry/api@1.9.0)(@playwright/test@1.58.2)(react-dom@19.1.3(react@19.1.3))(react@19.1.3))':
+  '@axiomhq/nextjs@0.1.6(@axiomhq/logging@0.1.5(@axiomhq/js@1.3.1))(next@15.5.9(@opentelemetry/api@1.9.0)(@playwright/test@1.58.2)(react-dom@19.1.3(react@19.1.3))(react@19.1.3))':
     dependencies:
       '@axiomhq/logging': 0.1.5(@axiomhq/js@1.3.1)
-      next: 15.5.8(@opentelemetry/api@1.9.0)(@playwright/test@1.58.2)(react-dom@19.1.3(react@19.1.3))(react@19.1.3)
+      next: 15.5.9(@opentelemetry/api@1.9.0)(@playwright/test@1.58.2)(react-dom@19.1.3(react@19.1.3))(react@19.1.3)
 
   '@azure/abort-controller@1.1.0':
     dependencies:
@@ -15864,11 +15890,11 @@ snapshots:
 
   '@internationalized/number@3.5.3':
     dependencies:
-      '@swc/helpers': 0.5.12
+      '@swc/helpers': 0.5.15
 
   '@internationalized/string@3.2.3':
     dependencies:
-      '@swc/helpers': 0.5.12
+      '@swc/helpers': 0.5.15
 
   '@isaacs/balanced-match@4.0.1': {}
 
@@ -16203,12 +16229,12 @@ snapshots:
     dependencies:
       sparse-bitfield: 3.0.3
 
-  '@next-auth/prisma-adapter@1.0.7(@prisma/client@6.19.1(prisma@6.19.1(typescript@5.4.4))(typescript@5.4.4))(next-auth@4.24.11(next@15.5.8(@opentelemetry/api@1.9.0)(@playwright/test@1.58.2)(react-dom@19.1.3(react@19.1.3))(react@19.1.3))(nodemailer@6.9.3)(react-dom@19.1.3(react@19.1.3))(react@19.1.3))':
+  '@next-auth/prisma-adapter@1.0.7(@prisma/client@6.19.1(prisma@6.19.1(typescript@5.4.4))(typescript@5.4.4))(next-auth@4.24.11(next@15.5.9(@opentelemetry/api@1.9.0)(@playwright/test@1.58.2)(react-dom@19.1.3(react@19.1.3))(react@19.1.3))(nodemailer@6.9.3)(react-dom@19.1.3(react@19.1.3))(react@19.1.3))':
     dependencies:
       '@prisma/client': 6.19.1(prisma@6.19.1(typescript@5.4.4))(typescript@5.4.4)
-      next-auth: 4.24.11(next@15.5.8(@opentelemetry/api@1.9.0)(@playwright/test@1.58.2)(react-dom@19.1.3(react@19.1.3))(react@19.1.3))(nodemailer@6.9.3)(react-dom@19.1.3(react@19.1.3))(react@19.1.3)
+      next-auth: 4.24.11(next@15.5.9(@opentelemetry/api@1.9.0)(@playwright/test@1.58.2)(react-dom@19.1.3(react@19.1.3))(react@19.1.3))(nodemailer@6.9.3)(react-dom@19.1.3(react@19.1.3))(react@19.1.3)
 
-  '@next/env@15.5.8': {}
+  '@next/env@15.5.9': {}
 
   '@next/env@16.1.6': {}
 
@@ -17526,7 +17552,7 @@ snapshots:
       '@react-aria/interactions': 3.21.3(react@19.1.3)
       '@react-aria/utils': 3.24.1(react@19.1.3)
       '@react-types/shared': 3.23.1(react@19.1.3)
-      '@swc/helpers': 0.5.12
+      '@swc/helpers': 0.5.15
       clsx: 2.1.1
       react: 19.1.3
 
@@ -17536,7 +17562,7 @@ snapshots:
       '@react-aria/utils': 3.24.1(react@19.1.3)
       '@react-stately/form': 3.0.3(react@19.1.3)
       '@react-types/shared': 3.23.1(react@19.1.3)
-      '@swc/helpers': 0.5.12
+      '@swc/helpers': 0.5.15
       react: 19.1.3
 
   '@react-aria/i18n@3.11.1(react@19.1.3)':
@@ -17548,7 +17574,7 @@ snapshots:
       '@react-aria/ssr': 3.9.4(react@19.1.3)
       '@react-aria/utils': 3.24.1(react@19.1.3)
       '@react-types/shared': 3.23.1(react@19.1.3)
-      '@swc/helpers': 0.5.12
+      '@swc/helpers': 0.5.15
       react: 19.1.3
 
   '@react-aria/interactions@3.21.3(react@19.1.3)':
@@ -17556,14 +17582,14 @@ snapshots:
       '@react-aria/ssr': 3.9.4(react@19.1.3)
       '@react-aria/utils': 3.24.1(react@19.1.3)
       '@react-types/shared': 3.23.1(react@19.1.3)
-      '@swc/helpers': 0.5.12
+      '@swc/helpers': 0.5.15
       react: 19.1.3
 
   '@react-aria/label@3.7.8(react@19.1.3)':
     dependencies:
       '@react-aria/utils': 3.24.1(react@19.1.3)
       '@react-types/shared': 3.23.1(react@19.1.3)
-      '@swc/helpers': 0.5.12
+      '@swc/helpers': 0.5.15
       react: 19.1.3
 
   '@react-aria/live-announcer@3.3.4':
@@ -17577,7 +17603,7 @@ snapshots:
       '@react-aria/utils': 3.24.1(react@19.1.3)
       '@react-types/button': 3.9.4(react@19.1.3)
       '@react-types/shared': 3.23.1(react@19.1.3)
-      '@swc/helpers': 0.5.12
+      '@swc/helpers': 0.5.15
       react: 19.1.3
       react-dom: 19.1.3(react@19.1.3)
 
@@ -17591,7 +17617,7 @@ snapshots:
       '@react-aria/ssr': 3.9.4(react@19.1.3)
       '@react-stately/utils': 3.10.1(react@19.1.3)
       '@react-types/shared': 3.23.1(react@19.1.3)
-      '@swc/helpers': 0.5.12
+      '@swc/helpers': 0.5.15
       clsx: 2.1.1
       react: 19.1.3
 
@@ -17955,19 +17981,19 @@ snapshots:
   '@react-stately/form@3.0.3(react@19.1.3)':
     dependencies:
       '@react-types/shared': 3.23.1(react@19.1.3)
-      '@swc/helpers': 0.5.12
+      '@swc/helpers': 0.5.15
       react: 19.1.3
 
   '@react-stately/overlays@3.6.7(react@19.1.3)':
     dependencies:
       '@react-stately/utils': 3.10.1(react@19.1.3)
       '@react-types/overlays': 3.8.7(react@19.1.3)
-      '@swc/helpers': 0.5.12
+      '@swc/helpers': 0.5.15
       react: 19.1.3
 
   '@react-stately/utils@3.10.1(react@19.1.3)':
     dependencies:
-      '@swc/helpers': 0.5.12
+      '@swc/helpers': 0.5.15
       react: 19.1.3
 
   '@react-types/button@3.9.4(react@19.1.3)':
@@ -19699,7 +19725,7 @@ snapshots:
       debug: 4.4.0
       globby: 11.1.0
       is-glob: 4.0.3
-      semver: 7.6.3
+      semver: 7.7.2
       tsutils: 3.21.0(typescript@4.9.5)
     optionalDependencies:
       typescript: 4.9.5
@@ -19716,7 +19742,7 @@ snapshots:
       '@typescript-eslint/typescript-estree': 5.62.0(typescript@4.9.5)
       eslint: 8.48.0
       eslint-scope: 5.1.1
-      semver: 7.6.3
+      semver: 7.7.2
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -20678,7 +20704,7 @@ snapshots:
 
   browserslist@4.23.3:
     dependencies:
-      caniuse-lite: 1.0.30001651
+      caniuse-lite: 1.0.30001741
       electron-to-chromium: 1.5.11
       node-releases: 2.0.18
       update-browserslist-db: 1.1.0(browserslist@4.23.3)
@@ -22795,9 +22821,9 @@ snapshots:
       - encoding
       - supports-color
 
-  geist@1.3.1(next@15.5.8(@opentelemetry/api@1.9.0)(@playwright/test@1.58.2)(react-dom@19.1.3(react@19.1.3))(react@19.1.3)):
+  geist@1.3.1(next@15.5.9(@opentelemetry/api@1.9.0)(@playwright/test@1.58.2)(react-dom@19.1.3(react@19.1.3))(react@19.1.3)):
     dependencies:
-      next: 15.5.8(@opentelemetry/api@1.9.0)(@playwright/test@1.58.2)(react-dom@19.1.3(react@19.1.3))(react@19.1.3)
+      next: 15.5.9(@opentelemetry/api@1.9.0)(@playwright/test@1.58.2)(react-dom@19.1.3(react@19.1.3))(react@19.1.3)
 
   generate-function@2.3.1:
     dependencies:
@@ -25245,13 +25271,13 @@ snapshots:
 
   neverthrow@7.2.0: {}
 
-  next-auth@4.24.11(next@15.5.8(@opentelemetry/api@1.9.0)(@playwright/test@1.58.2)(react-dom@19.1.3(react@19.1.3))(react@19.1.3))(nodemailer@6.9.3)(react-dom@19.1.3(react@19.1.3))(react@19.1.3):
+  next-auth@4.24.11(next@15.5.9(@opentelemetry/api@1.9.0)(@playwright/test@1.58.2)(react-dom@19.1.3(react@19.1.3))(react@19.1.3))(nodemailer@6.9.3)(react-dom@19.1.3(react@19.1.3))(react@19.1.3):
     dependencies:
       '@babel/runtime': 7.23.9
       '@panva/hkdf': 1.2.1
       cookie: 0.7.2
       jose: 4.15.9
-      next: 15.5.8(@opentelemetry/api@1.9.0)(@playwright/test@1.58.2)(react-dom@19.1.3(react@19.1.3))(react@19.1.3)
+      next: 15.5.9(@opentelemetry/api@1.9.0)(@playwright/test@1.58.2)(react-dom@19.1.3(react@19.1.3))(react@19.1.3)
       oauth: 0.9.15
       openid-client: 5.7.1
       preact: 10.24.3
@@ -25262,21 +25288,21 @@ snapshots:
     optionalDependencies:
       nodemailer: 6.9.3
 
-  next-plausible@4.0.0(next@15.5.8(@opentelemetry/api@1.9.0)(@playwright/test@1.58.2)(react-dom@19.1.3(react@19.1.3))(react@19.1.3))(react-dom@19.1.3(react@19.1.3))(react@19.1.3):
+  next-plausible@4.0.0(next@15.5.9(@opentelemetry/api@1.9.0)(@playwright/test@1.58.2)(react-dom@19.1.3(react@19.1.3))(react@19.1.3))(react-dom@19.1.3(react@19.1.3))(react@19.1.3):
     dependencies:
-      next: 15.5.8(@opentelemetry/api@1.9.0)(@playwright/test@1.58.2)(react-dom@19.1.3(react@19.1.3))(react@19.1.3)
+      next: 15.5.9(@opentelemetry/api@1.9.0)(@playwright/test@1.58.2)(react-dom@19.1.3(react@19.1.3))(react@19.1.3)
       react: 19.1.3
       react-dom: 19.1.3(react@19.1.3)
 
-  next-safe-action@8.0.11(next@15.5.8(@opentelemetry/api@1.9.0)(@playwright/test@1.58.2)(react-dom@19.1.3(react@19.1.3))(react@19.1.3))(react-dom@19.1.3(react@19.1.3))(react@19.1.3):
+  next-safe-action@8.0.11(next@15.5.9(@opentelemetry/api@1.9.0)(@playwright/test@1.58.2)(react-dom@19.1.3(react@19.1.3))(react@19.1.3))(react-dom@19.1.3(react@19.1.3))(react@19.1.3):
     dependencies:
-      next: 15.5.8(@opentelemetry/api@1.9.0)(@playwright/test@1.58.2)(react-dom@19.1.3(react@19.1.3))(react@19.1.3)
+      next: 15.5.9(@opentelemetry/api@1.9.0)(@playwright/test@1.58.2)(react-dom@19.1.3(react@19.1.3))(react@19.1.3)
       react: 19.1.3
       react-dom: 19.1.3(react@19.1.3)
 
-  next@15.5.8(@opentelemetry/api@1.9.0)(@playwright/test@1.58.2)(react-dom@19.1.3(react@19.1.3))(react@19.1.3):
+  next@15.5.9(@opentelemetry/api@1.9.0)(@playwright/test@1.58.2)(react-dom@19.1.3(react@19.1.3))(react@19.1.3):
     dependencies:
-      '@next/env': 15.5.8
+      '@next/env': 15.5.9
       '@swc/helpers': 0.5.15
       caniuse-lite: 1.0.30001741
       postcss: 8.4.31
