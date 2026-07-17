@@ -37,3 +37,5 @@ COPY --from=builder /app/apps/web/prisma ./apps/web/prisma
 EXPOSE 3000
 ENV PORT=3000 HOSTNAME=0.0.0.0
 CMD ["node", "apps/web/server.js"]
+
+# self-host build 1784296837
