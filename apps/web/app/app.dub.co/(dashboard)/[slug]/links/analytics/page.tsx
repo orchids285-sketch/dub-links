@@ -6,7 +6,7 @@ import { PageContent } from "@/ui/layout/page-content";
 export default function WorkspaceAnalytics() {
   const base = process.env.NEXT_PUBLIC_TRAFFIC_SOURCE_URL || "";
   const siteId = process.env.NEXT_PUBLIC_TRAFFIC_SOURCE_SITE_ID || "1";
-  const src = base ? `${base}/analytics/${siteId}` : "";
+  const src = base ? `${base}/analytics/${siteId}?embed=1` : "";
 
   return (
     <PageContent title="Analytics">
