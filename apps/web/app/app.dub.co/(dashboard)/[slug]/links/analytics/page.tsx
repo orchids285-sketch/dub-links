@@ -10,11 +10,11 @@ export default function WorkspaceAnalytics() {
 
   return (
     <PageContent title="Analytics">
-      <div className="h-[calc(100vh-6.5rem)] w-full overflow-hidden rounded-t-2xl bg-white">
+      <div className="h-[calc(100vh-5.5rem)] w-full overflow-hidden bg-white">
         {src ? (
           <iframe
             src={src}
-            className="h-full w-full border-0"
+            className="h-full w-full border-0 bg-white"
             title="Analytics"
           />
         ) : (
