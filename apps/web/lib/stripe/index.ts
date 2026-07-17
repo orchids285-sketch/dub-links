@@ -1,7 +1,9 @@
 import Stripe from "stripe";
 import { StripeMode } from "../types";
 
-export const stripe = new Stripe(`${process.env.STRIPE_SECRET_KEY}`, {
+// Links-only self-host: Stripe is unused. Fall back to a dummy key so the module
+// (imported transitively by many routes) never throws at build when no key is set.
+export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || "sk_test_dummy", {
   apiVersion: "2025-05-28.basil",
   appInfo: {
     name: "Dub.co",
@@ -19,7 +21,7 @@ const secretMap: Record<StripeMode, string | undefined> = {
 export const stripeAppClient = ({ mode }: { mode?: StripeMode }) => {
   const appSecretKey = secretMap[mode ?? "live"];
 
-  return new Stripe(appSecretKey!, {
+  return new Stripe(appSecretKey || "sk_test_dummy", {
     apiVersion: "2025-05-28.basil",
     appInfo: {
       name: "Dub.co",
