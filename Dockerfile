@@ -18,6 +18,8 @@ RUN pnpm install --frozen-lockfile --prod=false
 FROM base AS builder
 WORKDIR /app
 ENV NEXT_TELEMETRY_DISABLED=1
+# Dub's Next.js build is large; default ~4GB heap OOMs (exit 134). Give it room.
+ENV NODE_OPTIONS=--max-old-space-size=8192
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 # reinstall to link workspace packages that were copied after deps stage
