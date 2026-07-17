@@ -124,15 +124,8 @@ module.exports = withPlausibleProxy({
             value: "on",
           },
           {
-            key: "X-Frame-Options",
-            value: "DENY",
-          },
-        ],
-      },
-      {
-        source: "/embed/:path*",
-        headers: [
-          {
+            // Embeddable inside the FoundReach workspace: no X-Frame-Options
+            // DENY, and frame-ancestors * so the dashboard iframes cleanly.
             key: "Content-Security-Policy",
             value: "frame-ancestors *",
           },
