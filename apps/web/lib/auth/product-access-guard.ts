@@ -16,6 +16,12 @@ export const canAccessProgram = ({
   workspaceId?: string | null;
   userId?: string | null;
 }): boolean => {
+  // LINKS-ONLY self-host: no affiliate/attribution "Partner Program" product.
+  // Returning false hides the whole Program area from the sidebar + blocks its API paths.
+  if (process.env.DISABLE_PROGRAM === "true") {
+    return false;
+  }
+
   if (!workspaceId || !userId) {
     return true; // no info -> don't restrict
   }
