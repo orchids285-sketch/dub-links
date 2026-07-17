@@ -20,6 +20,36 @@ WORKDIR /app
 ENV NEXT_TELEMETRY_DISABLED=1
 # Dub's Next.js build is large; default ~4GB heap OOMs (exit 134). Give it room.
 ENV NODE_OPTIONS=--max-old-space-size=8192
+# Railway does NOT inject service env into Dockerfile builds. Two consequences:
+#  1) NEXT_PUBLIC_* vars must be baked in at build -> pass them as ARGs (Railway
+#     injects matching service variables as build args) so the self-host domains stick.
+#  2) module-scope SDK clients (Stripe/Upstash Vector/QStash/Resend/...) THROW on
+#     missing env during "collect page data" -> give them dummy build-time values.
+#     Real values come from Railway service vars at RUNTIME (they override these).
+ARG NEXT_PUBLIC_APP_DOMAIN
+ARG NEXT_PUBLIC_SHORT_DOMAIN
+ENV NEXT_PUBLIC_APP_DOMAIN=$NEXT_PUBLIC_APP_DOMAIN \
+    NEXT_PUBLIC_SHORT_DOMAIN=$NEXT_PUBLIC_SHORT_DOMAIN \
+    STRIPE_SECRET_KEY=sk_test_dummy \
+    STRIPE_APP_SECRET_KEY=sk_test_dummy \
+    UPSTASH_REDIS_REST_URL=http://localhost \
+    UPSTASH_REDIS_REST_TOKEN=dummy \
+    UPSTASH_VECTOR_REST_URL=http://localhost \
+    UPSTASH_VECTOR_REST_TOKEN=dummy \
+    QSTASH_URL=https://qstash.upstash.io \
+    QSTASH_TOKEN=dummy \
+    QSTASH_CURRENT_SIGNING_KEY=sig_dummy \
+    QSTASH_NEXT_SIGNING_KEY=sig_dummy \
+    RESEND_API_KEY=re_dummy \
+    TINYBIRD_API_KEY=dummy \
+    TINYBIRD_API_URL=https://api.tinybird.co \
+    OPENAI_API_KEY=sk-dummy \
+    ANTHROPIC_API_KEY=sk-ant-dummy \
+    UNKEY_ROOT_KEY=dummy \
+    AXIOM_TOKEN=dummy \
+    ENCRYPTION_KEY=ZHVtbXlfYnVpbGRfa2V5X18zMmJ5dGVzX18wMDAwMDA= \
+    NEXTAUTH_SECRET=build_dummy_secret \
+    UNSUBSCRIBE_TOKEN_SECRET=build_dummy_secret
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 # reinstall to link workspace packages that were copied after deps stage
