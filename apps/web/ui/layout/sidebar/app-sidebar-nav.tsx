@@ -104,7 +104,7 @@ const NAV_GROUPS: SidebarNavGroups<SidebarNavData> = ({
   };
   const linksGroup = {
     id: "links",
-    name: "Short Links",
+    name: "FoundReach",
     description:
       "Create, organize, and measure the performance of your short links.",
     learnMoreHref: "https://dub.co/links",
@@ -301,7 +301,7 @@ const NAV_AREAS: SidebarNavAreas<SidebarNavData> = {
   }),
   // short links
   links: ({ slug, pathname, queryString, showNews }) => ({
-    title: "Short Links",
+    title: "FoundReach",
     showNews,
     direction: "left",
     content: [

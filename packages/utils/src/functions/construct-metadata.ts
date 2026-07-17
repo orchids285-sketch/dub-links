@@ -44,7 +44,7 @@ export function constructMetadata({
   return {
     title:
       fullTitle ||
-      (title ? `${title} | Links` : "Links"),
+      (title ? `${title} | FoundReach` : "FoundReach"),
     description,
     openGraph: {
       title,

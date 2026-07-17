@@ -126,9 +126,9 @@ export function SidebarNav<T extends Record<any, any>>({
                   href="/"
                   className="block overflow-visible rounded-lg px-1 py-4 outline-none transition-opacity focus-visible:ring-2 focus-visible:ring-black/50"
                 >
-                  {/* de-branded: neutral wordmark instead of the Dub logo */}
+                  {/* FoundReach branding instead of the Dub logo */}
                   <span className="block px-1 text-base font-semibold tracking-tight text-neutral-900 dark:text-white">
-                    Links
+                    FoundReach
                   </span>
                 </Link>
               </div>
