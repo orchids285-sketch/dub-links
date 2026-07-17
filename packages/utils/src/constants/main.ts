@@ -1,21 +1,29 @@
-export const SHORT_DOMAIN = "dub.sh";
+// SELF-HOST: Dub hardcodes dub.co / dub.sh. Allow overriding via env so we can run
+// on Railway domains. NEXT_PUBLIC_APP_DOMAIN = dashboard host, NEXT_PUBLIC_SHORT_DOMAIN
+// = short-link host (both without protocol). Middleware routes app host -> dashboard,
+// everything else -> link redirect.
+const SELF_APP = process.env.NEXT_PUBLIC_APP_DOMAIN;
+const SELF_SHORT = process.env.NEXT_PUBLIC_SHORT_DOMAIN;
 
-export const APP_HOSTNAMES = new Set([
-  "app.dub.co",
-  "preview.dub.co",
-  "localhost:8888",
-  "localhost",
-]);
+export const SHORT_DOMAIN = SELF_SHORT || "dub.sh";
 
-export const APP_DOMAIN =
-  process.env.NEXT_PUBLIC_VERCEL_ENV === "production"
+export const APP_HOSTNAMES = new Set(
+  SELF_APP
+    ? [SELF_APP]
+    : ["app.dub.co", "preview.dub.co", "localhost:8888", "localhost"],
+);
+
+export const APP_DOMAIN = SELF_APP
+  ? `https://${SELF_APP}`
+  : process.env.NEXT_PUBLIC_VERCEL_ENV === "production"
     ? "https://app.dub.co"
     : process.env.NEXT_PUBLIC_VERCEL_ENV === "preview"
       ? "https://preview.dub.co"
       : "http://localhost:8888";
 
-export const APP_DOMAIN_WITH_NGROK =
-  process.env.NEXT_PUBLIC_VERCEL_ENV === "production"
+export const APP_DOMAIN_WITH_NGROK = SELF_APP
+  ? `https://${SELF_APP}`
+  : process.env.NEXT_PUBLIC_VERCEL_ENV === "production"
     ? "https://app.dub.co"
     : process.env.NEXT_PUBLIC_VERCEL_ENV === "preview"
       ? process.env.VERCEL_URL
