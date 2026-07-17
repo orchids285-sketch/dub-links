@@ -6,6 +6,9 @@ import { useRegisterDomainModal } from "../modals/register-domain-modal";
 import { X } from "../shared/icons";
 
 export function FreeDotLinkBanner() {
+  // De-branded self-host: no Dub ".link domain" promo.
+  return null;
+  // eslint-disable-next-line no-unreachable
   const { id: workspaceId, trialEndsAt } = useWorkspace();
   const [show, setShow] = useLocalStorage(
     `show-free-dot-link-banner:${workspaceId}`,

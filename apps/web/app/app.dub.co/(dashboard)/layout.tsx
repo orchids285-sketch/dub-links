@@ -12,24 +12,12 @@ export const dynamic = "force-static";
 export const metadata = constructMetadata();
 
 export default async function Layout({ children }: { children: ReactNode }) {
+  // De-branded self-host: no Dub upgrade banner, refer/help buttons, news, or onboarding toolbar.
   return (
-    <>
-      <div className="min-h-screen w-full bg-white">
-        <UpgradeBanner />
-        <MainNav
-          sidebar={AppSidebarNav}
-          toolContent={
-            <>
-              <ReferButton />
-              <HelpButton />
-            </>
-          }
-          newsContent={<NewsRSC />}
-        >
-          {children}
-        </MainNav>
-      </div>
-      <Toolbar show={["onboarding"]} />
-    </>
+    <div className="min-h-screen w-full bg-white">
+      <MainNav sidebar={AppSidebarNav} toolContent={null} newsContent={null}>
+        {children}
+      </MainNav>
+    </div>
   );
 }
