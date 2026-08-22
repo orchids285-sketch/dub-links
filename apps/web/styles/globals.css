@@ -100,3 +100,6 @@ input[type="number"]::-webkit-outer-spin-button {
 [data-sonner-toast] {
   border-radius: 10px !important;
 }
+
+/* Althaeion brand font — Satoshi (bundled), icon-safe */
+*:not([class*="material-symbols"]):not([class*="material-icons"]):not([class*="fa-" i]):not([class*="icon" i]):not(i):not(svg):not(svg *){font-family:var(--font-satoshi),"Satoshi",system-ui,sans-serif!important}
